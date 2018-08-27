@@ -3,3 +3,5 @@
 ################################################################################
 
 /DotnetCore/.vs
+/DotnetCore/DotnetCore.Web/bin/Debug/netcoreapp2.0
+/DotnetCore/DotnetCore.Web/obj
