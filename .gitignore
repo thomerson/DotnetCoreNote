@@ -5,3 +5,5 @@
 /DotnetCore/.vs
 /DotnetCore/DotnetCore.Web/bin/Debug/netcoreapp2.0
 /DotnetCore/DotnetCore.Web/obj
+/DotnetCore/DotnetCore.Log/bin/Debug/netcoreapp2.0
+/DotnetCore/DotnetCore.Log/obj

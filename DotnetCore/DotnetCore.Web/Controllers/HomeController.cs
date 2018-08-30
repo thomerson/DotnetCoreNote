@@ -5,14 +5,21 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using DotnetCore.Web.Models;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace DotnetCore.Web.Controllers
 {
     public class HomeController : Controller
     {
+        ServiceCollection services = new ServiceCollection();
         public IActionResult Index()
         {
             var result = JsonConfiguration.GetAppSettings<Logging>("Logging");
+
+            //this.HttpContext.RequestServices
+            var provider = services.BuildServiceProvider();
+            var singletone1 = provider.GetService<ILog>();
+            singletone1.Write("");
 
             return View();
         }

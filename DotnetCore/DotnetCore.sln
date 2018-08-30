@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetCore.Web", "DotnetCore.Web\DotnetCore.Web.csproj", "{FF11DD86-3D7A-47A3-9468-A03E74B56B76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetCore.Web", "DotnetCore.Web\DotnetCore.Web.csproj", "{FF11DD86-3D7A-47A3-9468-A03E74B56B76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetCore.Log", "DotnetCore.Log\DotnetCore.Log.csproj", "{A3F5E780-7C90-4CDD-B5C6-1A180E10D9A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FF11DD86-3D7A-47A3-9468-A03E74B56B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF11DD86-3D7A-47A3-9468-A03E74B56B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF11DD86-3D7A-47A3-9468-A03E74B56B76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3F5E780-7C90-4CDD-B5C6-1A180E10D9A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3F5E780-7C90-4CDD-B5C6-1A180E10D9A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3F5E780-7C90-4CDD-B5C6-1A180E10D9A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F5E780-7C90-4CDD-B5C6-1A180E10D9A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

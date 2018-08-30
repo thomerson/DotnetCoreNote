@@ -11,6 +11,8 @@ namespace DotnetCore.Web
 {
     public class Startup
     {
+
+        // 启动配置文件Configuration
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -18,6 +20,7 @@ namespace DotnetCore.Web
 
         public IConfiguration Configuration { get; }
 
+        //配置我们应用程序中的各种服务
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -27,8 +30,14 @@ namespace DotnetCore.Web
             //    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); 
 
             services.AddMvc();
+
+            services.AddSingleton<ILog, FileLog>(); //IOC
+            
+            //services.AddSingleton<ILog, DBLog>(); //IOC
+
         }
 
+        //处理我们程序中的各种中间件
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
@@ -43,6 +52,7 @@ namespace DotnetCore.Web
             }
 
             app.UseStaticFiles();
+            app.UseRequestIP(); //使用中间件
 
             app.UseMvc(routes =>
             {
